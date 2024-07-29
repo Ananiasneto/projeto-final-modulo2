@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #fafafa;
+    width: 935px;
+
+
+}
+.conteudo{
+    display: flex;
+}
+.menu-topo{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index: 1;
+    width: 935px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    border-color: #DBDBDB;
+    height: 54px;
+}
+.barrastorie{
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #DBDBDB;
+    border-radius: 3px;
+    width: 614px;
+    height: 118px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow:hidden;
+    margin-top: 88px;
+    margin-bottom: 24px;
+
+}
+.storie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+}
+.storie h1{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+.storie img{
+    width: 56px;
+    height: 56px;
+}
+.logo img{
+  width: 103px;
+  height: 29px;
+
+}
+.icones ion-icon{
+    font-size: 22px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.sidebar{
+    margin-left: 25px;
+    margin-top: 88px;
+   width: 293px;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;;
+}
+.info{
+    height: 34px;
+    line-height: 16px;
+    
+
+}
+.info h1{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto",sans-serif;
+}
+.info span{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Roboto",sans-serif;
+}
+
+.perfil img{
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    margin-right: 11px;
+
+}
+.sugestoes h2{
+    font-family: "Roboto",sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8E8E8E;
+}
+.sugerido{
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+.sugerido h2{
+    font-family: "Roboto",sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #139EF2;
+
+}
+
+.sugerido img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 11px;
+    
+}
+.imagem-texto{
+    display: flex;    
+    align-items: center;
+    margin-left: 10px;
+}
+.post {
+    height: 717px;
+    width: 614px;
+    border:1px solid;
+    border-color: #DBDBDB;
+    border-radius: 3px;
+    margin-bottom: 60px;
+}
+.postada{
+    width: 612px;
+    height: 612px;
+}
+.imagem-usuario{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+.usuario-post{
+    display: flex;    
+    align-items: center;
+
+}
+.usuario-post span{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto",sans-serif;
+
+}
+
+.usuario-post img{
+    margin: 16px;
+}
+.footer-imagem{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-imagem ion-icon{
+    font-size: 22px;
+    margin:8px 8px 12px 8px;
+    
+  
+}
+.footer-sidebar{
+    font-size: 11px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    color: #c7c7c7;
+}
+.footer-sidebar h1{
+    margin-top: 30px;
+}
+.footer-sidebar p{
+    margin-top: 18px;
+}
+.barra-inferior{
+  display: none;
+}
+
+@media(max-width :934px){
+    .sidebar{
+        display: none;
+    }
+    .conteudo{
+        justify-content: center;
+    }
+}
+@media(max-width :613px){
+    .conteudo{
+        height: 600px;
+    }
+    .icones ion-icon{
+       display: none;
+    }
+    .menu-topo{
+        justify-content: center;
+    }
+    .barrastorie{
+        margin-top: 55px;
+        border-radius: 0px;
+        margin-bottom: 0px;
+        background-color: #fafafa;
+    }
+    .postada{
+        width: 100%;
+    }
+    .barra-inferior{
+        position: fixed;
+        bottom:0;
+        display: flex;
+        justify-content: space-around;  
+        height: 60px; 
+        background-color: #ffffff;
+        width: 610px;
+        align-items: center;
+        z-index: 1;
+    }
+    .barra-inferior ion-icon{
+        font-size: 22px;
+    }
+   
+}
